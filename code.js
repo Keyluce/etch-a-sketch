@@ -1,5 +1,10 @@
 function changeBGColor() {
-    this.style.backgroundColor = 'orange';
+    let colorRed = Math.floor(Math.random() * 256);
+    let colorGreen = Math.floor(Math.random() * 256);
+    let colorBlue = Math.floor(Math.random() * 256);
+    this.style.filter = `brightness(${brightness}%)`;
+    this.style.backgroundColor = `rgb(${colorRed},${colorGreen},${colorBlue})`;
+    brightness = brightness - 10;
 }
 function changeGridSize() {
     let gridSize = prompt("Enter grid size (Just one side) : ");
@@ -11,6 +16,7 @@ function changeGridSize() {
     for (const column of columnBlock) {
         container.removeChild(column);
     }
+    brightness = 100;
     makeGrid(gridSize);
 }
 function makeGrid(size) {
@@ -35,7 +41,7 @@ function makeGrid(size) {
 const container = document.querySelector('.container');
 let size = 16;
 makeGrid(size);
-
+let brightness = 100;
 const button = document.querySelector('button');
 button.addEventListener('click', changeGridSize);
 
