@@ -1,14 +1,19 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     margin: auto;
     margin-top: 20px;
     border: 2px solid black;
 }
 
 button{
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+}
+h1{
     display: block;
     width: fit-content;
     margin: 10px auto;
