@@ -1,14 +1,4 @@
 const container = document.querySelector('.container');
-container.style.display = 'flex';
-container.style.flexDirection = 'column';
-container.style.height = '100%';
-const html = document.querySelector('html');
-html.style.height = '100%';
-const body = document.querySelector('body');
-body.style.height = '100%';
-container.style.border = '2px solid red';
-
-
 for (let i = 0; i < 16; i++)
 {
     let columnDiv = document.createElement('div');
@@ -25,3 +15,4 @@ for (let i = 0; i < 16; i++)
     }
 
 }
+
