@@ -1,9 +1,14 @@
-html,
-body,
-.container{
-    height: 100%;
-}
 .container {
     display: flex;
     flex-direction: column;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button{
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
 }
