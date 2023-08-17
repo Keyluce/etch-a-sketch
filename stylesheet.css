@@ -5,6 +5,7 @@
     height: 700px;
     margin: auto;
     margin-top: 20px;
+    border: 2px solid black;
 }
 
 button{
@@ -12,4 +13,6 @@ button{
     width: fit-content;
     margin: 10px auto;
 }
+
+
 
