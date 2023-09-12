@@ -2,9 +2,9 @@ function changeBGColor() {
     let colorRed = Math.floor(Math.random() * 256);
     let colorGreen = Math.floor(Math.random() * 256);
     let colorBlue = Math.floor(Math.random() * 256);
-    this.style.filter = `brightness(${brightness}%)`;
+    //this.style.filter = `brightness(${brightness}%)`;
     this.style.backgroundColor = `rgb(${colorRed},${colorGreen},${colorBlue})`;
-    brightness = brightness - 10;
+    //brightness = brightness - 10;
 }
 function changeGridSize() {
     let gridSize = prompt("Enter grid size (Just one side) : ");
